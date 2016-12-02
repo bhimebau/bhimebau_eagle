@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -116,6 +116,20 @@
 <text x="-4.4" y="6.9" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-4.3" y="8.7" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="POGO_0911">
+<smd name="P$1" x="0" y="0" dx="1.778" dy="1.778" layer="1" roundness="100"/>
+<smd name="P$2" x="1.778" y="-1.778" dx="1.778" dy="1.778" layer="1" roundness="100"/>
+<smd name="P$3" x="3.556" y="0" dx="1.778" dy="1.778" layer="1" roundness="100"/>
+<smd name="P$4" x="5.334" y="-1.778" dx="1.778" dy="1.778" layer="1" roundness="100"/>
+<smd name="P$5" x="7.112" y="0" dx="1.778" dy="1.778" layer="1" roundness="100"/>
+<smd name="P$6" x="8.89" y="-1.778" dx="1.778" dy="1.778" layer="1" roundness="100"/>
+<hole x="-2.667" y="-0.889" drill="0.79501875"/>
+<hole x="11.557" y="-0.889" drill="0.79501875"/>
+<wire x1="-4.445" y1="1.778" x2="-4.445" y2="-3.556" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-3.556" x2="13.335" y2="-3.556" width="0.127" layer="21"/>
+<wire x1="13.335" y1="-3.556" x2="13.335" y2="1.778" width="0.127" layer="21"/>
+<wire x1="13.335" y1="1.778" x2="-4.445" y2="1.778" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="WIIMOTE_6P">
@@ -156,6 +170,18 @@
 <wire x1="25.4" y1="12.7" x2="2.54" y2="12.7" width="0.254" layer="94"/>
 <text x="2.54" y="15.24" size="1.27" layer="96">&gt;VALUE</text>
 <text x="2.54" y="17.78" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="POGO_0911">
+<pin name="SWDIO" x="-5.08" y="0" length="middle"/>
+<pin name="SWCLK" x="-5.08" y="-2.54" length="middle"/>
+<pin name="GND" x="-5.08" y="-5.08" length="middle"/>
+<pin name="REG_IN" x="-5.08" y="-7.62" length="middle"/>
+<pin name="BATT_IN" x="-5.08" y="-10.16" length="middle"/>
+<pin name="WAKEUP" x="-5.08" y="-12.7" length="middle"/>
+<wire x1="0" y1="2.54" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="25.4" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-15.24" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -198,6 +224,26 @@
 <connect gate="G$1" pin="SLEEVE" pad="1"/>
 <connect gate="G$1" pin="TIP" pad="2"/>
 <connect gate="G$1" pin="TIP_SW" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POGO_0911">
+<gates>
+<gate name="G$1" symbol="POGO_0911" x="-12.7" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="POGO_0911">
+<connects>
+<connect gate="G$1" pin="BATT_IN" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="REG_IN" pad="P$3"/>
+<connect gate="G$1" pin="SWCLK" pad="P$4"/>
+<connect gate="G$1" pin="SWDIO" pad="P$5"/>
+<connect gate="G$1" pin="WAKEUP" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -62,90 +62,90 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="construction" color="13" fill="1" visible="no" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
-<package name="WSON-8">
-<smd name="P$1" x="0" y="0" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="-1.27" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$3" x="0" y="-2.54" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$4" x="0" y="-3.81" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$5" x="7.62" y="-3.81" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$6" x="7.62" y="-2.54" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$7" x="7.62" y="-1.27" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$8" x="7.62" y="0" dx="0.5" dy="1" layer="1" rot="R90"/>
-<wire x1="-0.2" y1="0.95" x2="-0.2" y2="0.25" width="0" layer="100"/>
-<wire x1="-0.2" y1="0.25" x2="-0.2" y2="-4.05" width="0" layer="100"/>
-<wire x1="-0.2" y1="-4.05" x2="-0.2" y2="-4.76" width="0" layer="100"/>
-<wire x1="7.8" y1="0.95" x2="7.8" y2="0.25" width="0" layer="100"/>
-<wire x1="7.8" y1="0.25" x2="7.8" y2="-4.05" width="0" layer="100"/>
-<wire x1="7.8" y1="-4.05" x2="7.8" y2="-4.76" width="0" layer="100"/>
-<wire x1="-0.2" y1="0.95" x2="2.1" y2="0.95" width="0" layer="100"/>
-<wire x1="2.1" y1="0.95" x2="5.5" y2="0.95" width="0" layer="100"/>
-<wire x1="5.5" y1="0.95" x2="7.8" y2="0.95" width="0" layer="100"/>
-<wire x1="-0.2" y1="-4.76" x2="2.1" y2="-4.76" width="0" layer="100"/>
-<wire x1="2.1" y1="-4.76" x2="5.5" y2="-4.75" width="0" layer="100"/>
-<wire x1="5.5" y1="-4.75" x2="7.8" y2="-4.76" width="0" layer="100"/>
-<wire x1="-0.2" y1="-4.05" x2="7.8" y2="-4.05" width="0" layer="100"/>
-<wire x1="-0.2" y1="0.25" x2="7.8" y2="0.25" width="0" layer="100"/>
-<wire x1="2.1" y1="0.95" x2="2.1" y2="-4.76" width="0" layer="100"/>
-<wire x1="5.5" y1="0.95" x2="5.5" y2="-4.75" width="0" layer="100"/>
-<wire x1="-0.19" y1="0.96" x2="7.8" y2="0.96" width="0.127" layer="21"/>
-<wire x1="7.8" y1="0.96" x2="7.8" y2="0.6" width="0.127" layer="21"/>
-<wire x1="-0.19" y1="0.97" x2="-0.19" y2="0.53" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="-4.39" x2="-0.21" y2="-4.39" width="0.127" layer="21"/>
-<wire x1="-0.21" y1="-4.39" x2="-0.21" y2="-4.78" width="0.127" layer="21"/>
-<wire x1="-0.21" y1="-4.78" x2="7.8" y2="-4.78" width="0.127" layer="21"/>
-<wire x1="7.8" y1="-4.78" x2="7.8" y2="-4.4" width="0.127" layer="21"/>
-<wire x1="7.8" y1="-4.4" x2="7.79" y2="-4.4" width="0.127" layer="21"/>
-<wire x1="6.49" y1="-4.77" x2="6.53" y2="-4.77" width="0.127" layer="21"/>
-<wire x1="6.53" y1="-4.77" x2="6.53" y2="-4.7" width="0.127" layer="21"/>
-<circle x="1.28" y="0.26" radius="0.367965625" width="0.127" layer="21"/>
-<text x="-1.27" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<package name="SOT23">
+<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.1524" x2="-1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="0.6604" x2="-0.8636" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1524" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="DSN2">
+<smd name="P$1" x="0.15" y="-0.14" dx="0.28" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$2" x="0.15" y="-0.61" dx="0.28" dy="0.3" layer="1" rot="R90"/>
+<wire x1="0" y1="0.1" x2="0.3" y2="0.1" width="0.127" layer="21"/>
+<text x="0.9" y="-0.8" size="1.27" layer="27">&gt;value</text>
+<text x="0.95" y="-2.4" size="1.27" layer="25">&gt;name</text>
 </package>
 </packages>
 <symbols>
-<symbol name="QD5F1GQ4UCYIG">
-<pin name="CS" x="-5.08" y="0" length="middle"/>
-<pin name="SO" x="-5.08" y="-2.54" length="middle"/>
-<pin name="WP" x="-5.08" y="-5.08" length="middle"/>
-<pin name="VSS" x="-5.08" y="-7.62" length="middle"/>
-<pin name="SI" x="35.56" y="-7.62" length="middle" rot="R180"/>
-<pin name="SCK" x="35.56" y="-5.08" length="middle" rot="R180"/>
-<pin name="HOLD" x="35.56" y="-2.54" length="middle" rot="R180"/>
-<pin name="VCC" x="35.56" y="0" length="middle" rot="R180"/>
-<wire x1="0" y1="7.62" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="30.48" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-15.24" x2="30.48" y2="7.62" width="0.254" layer="94"/>
-<wire x1="30.48" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
-<text x="-5.08" y="10.16" size="1.27" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="12.7" size="1.27" layer="95">&gt;NAME</text>
+<symbol name="NSR01L30NXT5G">
+</symbol>
+<symbol name="SCHOTTKY-1">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GD5F1GQ4UCY1G">
+<deviceset name="BAS40" prefix="D">
+<description>&lt;b&gt;Silicon Schottky Diodes&lt;/b&gt;&lt;p&gt;
+General-purpose diode for high-speed switching</description>
 <gates>
-<gate name="G$1" symbol="QD5F1GQ4UCYIG" x="-15.24" y="10.16"/>
+<gate name="1" symbol="SCHOTTKY-1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="WSON-8">
+<device name="" package="SOT23">
 <connects>
-<connect gate="G$1" pin="CS" pad="P$1"/>
-<connect gate="G$1" pin="HOLD" pad="P$7"/>
-<connect gate="G$1" pin="SCK" pad="P$6"/>
-<connect gate="G$1" pin="SI" pad="P$5"/>
-<connect gate="G$1" pin="SO" pad="P$2"/>
-<connect gate="G$1" pin="VCC" pad="P$8"/>
-<connect gate="G$1" pin="VSS" pad="P$4"/>
-<connect gate="G$1" pin="WP" pad="P$3"/>
+<connect gate="1" pin="A" pad="1"/>
+<connect gate="1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NSR01L30NXT5G">
+<gates>
+<gate name="G$1" symbol="SCHOTTKY-1" x="-5.08" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="DSN2">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -62,90 +62,113 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="construction" color="13" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
 <packages>
-<package name="WSON-8">
-<smd name="P$1" x="0" y="0" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="-1.27" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$3" x="0" y="-2.54" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$4" x="0" y="-3.81" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$5" x="7.62" y="-3.81" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$6" x="7.62" y="-2.54" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$7" x="7.62" y="-1.27" dx="0.5" dy="1" layer="1" rot="R90"/>
-<smd name="P$8" x="7.62" y="0" dx="0.5" dy="1" layer="1" rot="R90"/>
-<wire x1="-0.2" y1="0.95" x2="-0.2" y2="0.25" width="0" layer="100"/>
-<wire x1="-0.2" y1="0.25" x2="-0.2" y2="-4.05" width="0" layer="100"/>
-<wire x1="-0.2" y1="-4.05" x2="-0.2" y2="-4.76" width="0" layer="100"/>
-<wire x1="7.8" y1="0.95" x2="7.8" y2="0.25" width="0" layer="100"/>
-<wire x1="7.8" y1="0.25" x2="7.8" y2="-4.05" width="0" layer="100"/>
-<wire x1="7.8" y1="-4.05" x2="7.8" y2="-4.76" width="0" layer="100"/>
-<wire x1="-0.2" y1="0.95" x2="2.1" y2="0.95" width="0" layer="100"/>
-<wire x1="2.1" y1="0.95" x2="5.5" y2="0.95" width="0" layer="100"/>
-<wire x1="5.5" y1="0.95" x2="7.8" y2="0.95" width="0" layer="100"/>
-<wire x1="-0.2" y1="-4.76" x2="2.1" y2="-4.76" width="0" layer="100"/>
-<wire x1="2.1" y1="-4.76" x2="5.5" y2="-4.75" width="0" layer="100"/>
-<wire x1="5.5" y1="-4.75" x2="7.8" y2="-4.76" width="0" layer="100"/>
-<wire x1="-0.2" y1="-4.05" x2="7.8" y2="-4.05" width="0" layer="100"/>
-<wire x1="-0.2" y1="0.25" x2="7.8" y2="0.25" width="0" layer="100"/>
-<wire x1="2.1" y1="0.95" x2="2.1" y2="-4.76" width="0" layer="100"/>
-<wire x1="5.5" y1="0.95" x2="5.5" y2="-4.75" width="0" layer="100"/>
-<wire x1="-0.19" y1="0.96" x2="7.8" y2="0.96" width="0.127" layer="21"/>
-<wire x1="7.8" y1="0.96" x2="7.8" y2="0.6" width="0.127" layer="21"/>
-<wire x1="-0.19" y1="0.97" x2="-0.19" y2="0.53" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="-4.39" x2="-0.21" y2="-4.39" width="0.127" layer="21"/>
-<wire x1="-0.21" y1="-4.39" x2="-0.21" y2="-4.78" width="0.127" layer="21"/>
-<wire x1="-0.21" y1="-4.78" x2="7.8" y2="-4.78" width="0.127" layer="21"/>
-<wire x1="7.8" y1="-4.78" x2="7.8" y2="-4.4" width="0.127" layer="21"/>
-<wire x1="7.8" y1="-4.4" x2="7.79" y2="-4.4" width="0.127" layer="21"/>
-<wire x1="6.49" y1="-4.77" x2="6.53" y2="-4.77" width="0.127" layer="21"/>
-<wire x1="6.53" y1="-4.77" x2="6.53" y2="-4.7" width="0.127" layer="21"/>
-<circle x="1.28" y="0.26" radius="0.367965625" width="0.127" layer="21"/>
-<text x="-1.27" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<package name="LUXEON_5630">
+<description>&lt;b&gt;LUXEON 5630 Mid-Power LEDs&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="www.philipslumileds.com/uploads/351/DS201-pdf"&gt; Data sheet &lt;/a&gt;&lt;br&gt;
+Lumileds 5630 Datasheet DS201 20130228 ©2013 Philips Lumileds Lighting Company.</description>
+<smd name="1@1" x="-2.4" y="-0.65" dx="1.1" dy="1" layer="1"/>
+<smd name="1@2" x="-2.4" y="0.65" dx="1.1" dy="1" layer="1"/>
+<smd name="4" x="2.4" y="0.65" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="2.4" y="-0.65" dx="1.1" dy="1" layer="1"/>
+<smd name="3" x="0" y="0" dx="2.2" dy="1.8" layer="1"/>
+<wire x1="-2.55" y1="1.4" x2="2.55" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="2.55" y1="1.4" x2="2.55" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.55" y1="-1.4" x2="-2.55" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.55" y1="-1.4" x2="-2.55" y2="1.4" width="0.2032" layer="51"/>
+<rectangle x1="2.55" y1="-0.9" x2="2.8" y2="-0.4" layer="51"/>
+<rectangle x1="2.55" y1="0.4" x2="2.8" y2="0.9" layer="51"/>
+<rectangle x1="-2.8" y1="0.4" x2="-2.55" y2="0.9" layer="51"/>
+<rectangle x1="-2.8" y1="-0.9" x2="-2.55" y2="-0.4" layer="51"/>
+<rectangle x1="-0.8125" y1="-0.6375" x2="0.8125" y2="0.6375" layer="51"/>
+<polygon width="0.1" layer="51">
+<vertex x="-2.6" y="-0.9"/>
+<vertex x="-2.05" y="-1.45"/>
+<vertex x="-2.55" y="-1.45"/>
+<vertex x="-2.6" y="-1.4"/>
+</polygon>
+<polygon width="0.1" layer="21">
+<vertex x="-2.2625" y="-1.2375"/>
+<vertex x="-2.05" y="-1.45"/>
+<vertex x="-2.55" y="-1.45"/>
+<vertex x="-2.6" y="-1.4"/>
+<vertex x="-2.6" y="-1.2375"/>
+</polygon>
+<text x="-2.55" y="1.79" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.7" y="-3.15" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="XZMER155W">
+<smd name="P$1" x="0.125" y="-0.085" dx="0.25" dy="0.17" layer="1"/>
+<smd name="P$2" x="0.125" y="-0.4" dx="0.25" dy="0.17" layer="1"/>
+<wire x1="0" y1="0.15" x2="0.25" y2="0.15" width="0.127" layer="21"/>
+<text x="0.6" y="0.6" size="1.27" layer="25">&gt;name</text>
+<text x="0.65" y="-0.85" size="1.27" layer="27">&gt;value</text>
 </package>
 </packages>
 <symbols>
-<symbol name="QD5F1GQ4UCYIG">
-<pin name="CS" x="-5.08" y="0" length="middle"/>
-<pin name="SO" x="-5.08" y="-2.54" length="middle"/>
-<pin name="WP" x="-5.08" y="-5.08" length="middle"/>
-<pin name="VSS" x="-5.08" y="-7.62" length="middle"/>
-<pin name="SI" x="35.56" y="-7.62" length="middle" rot="R180"/>
-<pin name="SCK" x="35.56" y="-5.08" length="middle" rot="R180"/>
-<pin name="HOLD" x="35.56" y="-2.54" length="middle" rot="R180"/>
-<pin name="VCC" x="35.56" y="0" length="middle" rot="R180"/>
-<wire x1="0" y1="7.62" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="30.48" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-15.24" x2="30.48" y2="7.62" width="0.254" layer="94"/>
-<wire x1="30.48" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
-<text x="-5.08" y="10.16" size="1.27" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="12.7" size="1.27" layer="95">&gt;NAME</text>
+<symbol name="LED">
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GD5F1GQ4UCY1G">
+<deviceset name="LUXEON_5630" prefix="LED">
+<description>&lt;b&gt;LUXEON 5630 Mid-Power LEDs&lt;/b&gt; SD201&lt;p&gt;
+Source: &lt;a href="www.philipslumileds.com/uploads/351/DS201-pdf"&gt; Data sheet &lt;/a&gt;&lt;br&gt;
+Lumileds 5630 Datasheet DS201 20130228 ©2013 Philips Lumileds Lighting Company.</description>
 <gates>
-<gate name="G$1" symbol="QD5F1GQ4UCYIG" x="-15.24" y="10.16"/>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="WSON-8">
+<device name="" package="LUXEON_5630">
 <connects>
-<connect gate="G$1" pin="CS" pad="P$1"/>
-<connect gate="G$1" pin="HOLD" pad="P$7"/>
-<connect gate="G$1" pin="SCK" pad="P$6"/>
-<connect gate="G$1" pin="SI" pad="P$5"/>
-<connect gate="G$1" pin="SO" pad="P$2"/>
-<connect gate="G$1" pin="VCC" pad="P$8"/>
-<connect gate="G$1" pin="VSS" pad="P$4"/>
-<connect gate="G$1" pin="WP" pad="P$3"/>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1@1 1@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XZMER155W">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="XZMER155W">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
